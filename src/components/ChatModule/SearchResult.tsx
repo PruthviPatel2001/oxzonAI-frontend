@@ -14,13 +14,13 @@ interface SearchResultProps {
 
 const SearchResult: React.FC<SearchResultProps> = ({ result }) => {
   return (
-    <div className=" rounded-lg mb-4">
+    <div className=" text-white rounded-lg mb-4">
       <p className="font-semibold text-lg">
         Total Occurrences: {result.total_occurrences}
       </p>
       <div className="overflow-y-auto max-h-40">
         {result.occurrences_by_page.map((occurrence, index) => (
-          <div key={index} className="text-sm text-gray-600">
+          <div key={index} className="text-sm ">
             <p>
               Page {occurrence.page}: {occurrence.count} occurrences
             </p>
@@ -31,7 +31,7 @@ const SearchResult: React.FC<SearchResultProps> = ({ result }) => {
         href={`/api/download?filename=${result.highlighted_file}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 underline hover:text-blue-800"
+        className="text-white mt-4"
       >
         Download highlighted PDF
       </a>

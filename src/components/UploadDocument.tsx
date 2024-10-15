@@ -54,7 +54,6 @@ const UploadModal: React.FC<UploadModalProps> = ({
       if (open) {
         try {
           const types = await fetchReportTypes();
-          console.log("Report types:", types);
           setReportTypes(types);
         } catch (error) {
           console.error("Error fetching report types:", error);
@@ -101,7 +100,6 @@ const UploadModal: React.FC<UploadModalProps> = ({
 
     try {
       const response = await uploadDocument(documentData);
-      console.log("Document uploaded successfully:", response);
 
       handleDocumentInfoChange(response.document_id, name, pageCount);
 
