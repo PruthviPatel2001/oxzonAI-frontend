@@ -45,7 +45,7 @@ git clone <repository-url>
 cd <folder-name>
 ```
 
-2. Installs required packages for the backend.
+2. Installs required packages for the frontend.
 
 ```bash
 npm install
