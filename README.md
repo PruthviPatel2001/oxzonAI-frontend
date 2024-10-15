@@ -56,3 +56,7 @@ npm install
 ```bash
 npm start
 ```
+
+## Backend Repository
+
+For the back-end implementation of the AI-Based Knowledge-Based Search Retrieval System, please visit the following repository: [oxzonAI-backend](https://github.com/PruthviPatel2001/oxzonAI-backend).
